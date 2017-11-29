@@ -2,7 +2,8 @@ var answers = ["yes", "no", "yes", "no", "no", "no"]
 
 //map over answers
 //change yes into no and no into yes
-
+var opposites = answers.map((x, i, arr) => x === 'yes' ? x = 'no' : x = 'yes');
+opposites;
 //DESIRED RESULT = ["no", "yes", "no", "yes", "yes", "yes"]
 
 
@@ -16,7 +17,10 @@ var employees = [
 //map over employees and give each employee a bump in pay by 3.
 //split on the - in name and turn name into first_name and last_name
 //save it to a new array variable
+var employeesPay = employees.map((x, i, arr)=>x.pay +=3);
 
+var names = employees.map((x, i, arr) => x.name.split('-'));
+names.map((x, i, arr) => x.arr[0] )
 
 
 

@@ -8,6 +8,13 @@ var mydates = {
 }
 
 //delete spots from mydates
+delete mydates.spots;
 
 
 //loop over my dates and delete all properties with a falsy value
+for(var x in mydates){
+    if(mydates[x] === false){
+        delete mydates[x];
+    }
+}
+mydates;

@@ -7,6 +7,11 @@ var drink = {
 
 //Loop over drink
 //if the value is 'orange' change it to 'cherry'
+for(var x in drink){
+    if(drink[x] === 'orange'){
+        drink[x] = 'cherry';
+    }
+}
 
 
 
